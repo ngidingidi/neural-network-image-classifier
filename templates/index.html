@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- General comment: Place the bootstrap CSS, custom CSS, JavaScript referenced files in this order. Code breaks if the order is not followed -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+
+    <!-- These files are needed here for DataTables plugin to work -->
+    <!-- This live demo helped me get plugin to work: http://jsfiddle.net/y913yh4u/2/ . Also stackoverflow discussion at: https://stackoverflow.com/questions/27873581/datatable-doesnt-work-jquery-->
+    <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables_themeroller.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="#"> 
+
+    <title>File Upload</title>
+
+  
+  </head>
+  <body>
+           
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                 <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                          <span class="navbar-toggler-icon"></span>
+                 </button>
+
+         <div class="collapse navbar-collapse" id="collapse_target">
+      
+               <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" style="font-weight: 700; font-size: 1.25rem;" href="#">HOME<span class="sr-only">(current)</span></a>
+                            </li>
+                           
+                            <li class="nav-item active">
+                              <a class="nav-link" style="font-weight: 700; font-size: 1.25rem;" href="#">CONTENT<span class="sr-only">(current)</span></a>
+                            </li>         
+                 </ul>   
+
+          </div>
+       </nav>
+     </div>
+
+    
+    {% block content %}
+
+    {% endblock %}
+
+    {% block script %}
+
+    {% endblock %}
+
+  </body>
+</html>
