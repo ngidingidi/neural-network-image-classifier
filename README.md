@@ -8,5 +8,5 @@ One thing I failed on was deploying the app on Heroku. I kept getting "Error R14
 
 When you run the flask app on your machine, you should get a UI which looks like below. The UI allows you to upload an image and it will perform the classification for you. Just make sure that you upload images from your static/my_test folder but you can modify this path if you want to inside image-cl-flask.py.
 
-<img src="./sea.PNG">
+<img src="./image.PNG">
 
